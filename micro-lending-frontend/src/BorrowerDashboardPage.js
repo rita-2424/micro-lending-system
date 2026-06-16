@@ -19,7 +19,7 @@ const BorrowerDashboardPage = () => {
       const fetchLoanRequests = async () => {
         try {
             console.log(`Fetching loan requests for user: ${userId}`); 
-            const borrower = "0x20301285102F899Ec34B48B8e5F55eE4785382B8";
+            const borrower = "";
             const response = await axios.get(`http://localhost:3000/api/loans/fetchLoanRequests/${borrower}`);
             
             console.log("Response from backend:", response.data); 
