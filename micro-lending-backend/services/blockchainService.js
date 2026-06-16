@@ -5,10 +5,10 @@ const provider = new ethers.providers.JsonRpcProvider('https://api.avax-test.net
 
 const signer = new ethers.Wallet(process.env.PRIVATE_KEY, provider);
 
-
-const loanRequestAddress = "0x1c8E3dE55cBe2b10f56a4cd79CA660d77Cd79606";
-const lenderFundingAddress = "0x15A0Eb9CaF66A4BD976e75ce1ce896Fdbb2858B3";
-const loanRepaymentAddress = "0xBa1240AE40ba7C98aAfb24358a8C61A40A2c636B";
+//enter credentials
+const loanRequestAddress = "";
+const lenderFundingAddress = "";
+const loanRepaymentAddress = "";
 
 const loanRequestABI = [
     "function createLoanRequest(uint256 amount, uint256 interestRate, uint256 repaymentDeadline) public",
